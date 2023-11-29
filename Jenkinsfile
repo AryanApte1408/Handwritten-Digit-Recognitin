@@ -10,13 +10,15 @@ pipeline {
                 git branch: 'master', url: 'https://github.com/AryanApte1408/Handwritten-Digit-Recognition.git'
             }
         }
-    }
+    
 
-    stage('Build Images') {
+        stage('Build Images') {
             steps {
                 script {
                     bat 'docker build -t omgholap/mnist-capstone-new:code mnist'
                 }
             }
         }
+    }
+    
 }
