@@ -11,4 +11,12 @@ pipeline {
             }
         }
     }
+
+    stage('Build Images') {
+            steps {
+                script {
+                    bat 'docker build -t om/mnist-capstone-new:code mnist'
+                }
+            }
+        }
 }
