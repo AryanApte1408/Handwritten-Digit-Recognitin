@@ -15,10 +15,10 @@ pipeline {
         stage('Build Images') {
             steps {
                 script {
-                    bat 'docker build -t omgholap/mnist-capstone-new:code mnist'
+                    bat 'docker build -t omgholap/mnist-capstone-new:code .'
                 }
             }
         }
     }
-    
+
 }
