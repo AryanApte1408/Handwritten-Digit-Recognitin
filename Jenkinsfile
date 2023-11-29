@@ -25,8 +25,8 @@ pipeline {
                 withDockerRegistry([ credentialsId: "omgholap-dockerhub", url: "" ]) {
                     bat 'docker push omgholap/mnist-capstone-new:code'
                 }
-            }
-        }
+            }
+        }
     }
 
 }
