@@ -1,9 +1,11 @@
+# model.py
+
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
 # Load the MNIST dataset
-(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data() 
+(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 
 # Preprocess the data
 x_train, x_test = x_train / 255.0, x_test / 255.0
@@ -27,10 +29,6 @@ model.compile(optimizer='adam',
 
 # Train the model
 model.fit(x_train, y_train, epochs=5)
-
-# Evaluate the model on the test data
-test_loss, test_accuracy = model.evaluate(x_test, y_test)
-print(f'Test accuracy: {test_accuracy}')
 
 # Save the trained model
 model.save('mnist_cnn_model.h5')
