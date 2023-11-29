@@ -19,6 +19,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Push Images to Hub') {
+            steps {
+                withDockerRegistry([ credentialsId: "omgholap-dockerhub", url: "" ]) {
+                    bat 'docker push omgholap/mnist-capstone-new:code'
+                }
+            }
+        }
     }
 
 }
