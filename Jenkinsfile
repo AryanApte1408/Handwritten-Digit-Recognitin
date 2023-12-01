@@ -7,10 +7,16 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/AryanApte1408/Handwritten-Digit-Recognition.git'
+                git branch: 'main', url: 'https://github.com/AryanApte1408/Handwritten-Digit-Recognition.git'
             }
         }
-    
+
+        stage('Install Dependencies') {
+            steps {
+                bat 'pip install -r requirements.txt'
+            }
+        }
+
 
         stage('Build Images') {
             steps {
