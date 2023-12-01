@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'python:3' }
-    }
+    agent any
     options {
         skipDefaultCheckout(true)
     }
@@ -12,13 +10,6 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/AryanApte1408/Handwritten-Digit-Recognition.git'
             }
         }
-
-        stage('Install Dependencies') {
-            steps {
-                bat 'pip install -r requirements.txt'
-            }
-        }
-
 
         stage('Build Images') {
             steps {
