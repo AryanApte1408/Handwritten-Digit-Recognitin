@@ -6,10 +6,7 @@ COPY requirements.txt /app/
 WORKDIR /app
 RUN pip install -r requirements.txt
 
-COPY mnist /app/mnist
-COPY app.py /app/
-COPY templates /app/templates
-COPY static /app/static
+COPY . .
 
 EXPOSE 5000
 ENTRYPOINT ["python3"]
