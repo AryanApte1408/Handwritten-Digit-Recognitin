@@ -11,6 +11,14 @@ pipeline {
             }
         }
 
+    	stage('Unit Tests') {
+            steps {
+                // Run your pytest tests
+                script {
+                    sh 'pytest'
+                }
+            }
+        }
         stage('Build Images') {
             steps {
                 script {
