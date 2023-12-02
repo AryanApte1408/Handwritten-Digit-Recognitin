@@ -48,7 +48,7 @@ post {
                         <p>Build URL: ${BUILD_URL}</p>
                         </html>''',
                 subject: 'Build Failure',
-                to: 'harsh.sinha20@st.niituniversity.in, om.gholap20@st.niituniversity.in',
+                to: 'harsh.sinha20@st.niituniversity.in, aryan.apte20@st.niituniversity.in,vishishta.ranjan20@st.niituniversity.in ,om.gholap20@st.niituniversity.in',
                 mimeType: 'text/html'
             )
 
@@ -59,7 +59,8 @@ post {
                 attachLog: true,
                 body: 'The build was successful.',
                 subject: 'Build Success',
-                to: 'harsh.sinha20@st.niituniversity.in, om.gholap20@st.niituniversity.in',
+                to: 'harsh.sinha20@st.niituniversity.in, aryan.apte20@st.niituniversity.in,vishishta.ranjan20@st.niituniversity.in ,om.gholap20@st.niituniversity.in',
+                // to: 'harsh.sinha20@st.niituniversity.in, om.gholap20@st.niituniversity.in',
                 mimeType: 'text/html'
             )
 
