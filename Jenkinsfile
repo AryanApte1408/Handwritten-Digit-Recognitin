@@ -15,7 +15,7 @@ pipeline {
             steps {
                 // Run your pytest tests
                 script {
-                    sh 'pytest'
+                    bat 'pytest'
                 }
             }
         }
