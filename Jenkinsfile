@@ -11,11 +11,10 @@ pipeline {
             }
         }
 
-    	stage('Unit Tests') {
+        stage('Unit Tests') {
             steps {
-                // Run your pytest tests
                 script {
-                    bat 'pytest'
+                    bat 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\pytest'
                 }
             }
         }
