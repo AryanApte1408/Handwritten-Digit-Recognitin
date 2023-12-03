@@ -69,7 +69,11 @@ port = int(os.environ.get("PORT", 5000))
 model = tf.keras.models.load_model('mnist')
 
 @app.route('/')
-def root():
+def home():
+    return render_template("home.html")
+
+@app.route('/paint')
+def paint():
     return render_template("paint.html")
 
 @app.route('/infer', methods=['POST'])
