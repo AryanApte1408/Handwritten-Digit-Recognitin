@@ -30,6 +30,23 @@ def infer():
     result = model.predict(image)
     predicted_class = int(np.argmax(result))
     return json.dumps({ 'result': predicted_class })
+# model.py
+import tensorflow as tf
+import numpy as np
+
+def load_model():
+    # Load the trained model
+    loaded_model = tf.keras.models.load_model('mnist-model')
+    return loaded_model
+
+def predict_digit(image_array):
+    model = load_model()
+    image = image_array.reshape((112, 112))[::4, ::4].reshape((1, 28, 28))
+    result = model.predict(image)
+    predicted_class = int(np.argmax(result))
+    return predicted_class
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=port)
