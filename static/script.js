@@ -1,3 +1,4 @@
+
 /*
 Vue.js (https://vuejs.org/)
 CDN: https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js
@@ -96,4 +97,3 @@ var postImageData = (dataPoint) => {
         }
     });
 }
-  
