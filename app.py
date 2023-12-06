@@ -11,7 +11,7 @@ def load_model():
     # Load the trained model
     loaded_model = tf.keras.models.load_model('mnist-model')
     return loaded_model
-
+#app.py
 # Load the model when the app starts
 model = load_model()
 
