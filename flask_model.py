@@ -28,5 +28,5 @@ def upload():
         # Process the uploaded file here (e.g., use your model for prediction)
         return render_template('inner-page.html', filename=filename)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
