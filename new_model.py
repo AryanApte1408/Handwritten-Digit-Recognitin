@@ -1,5 +1,3 @@
-# model.py
-
 import tensorflow as tf
 import numpy as np
 import cv2
@@ -23,16 +21,10 @@ def preprocess_input_image(input_image_path):
     return img_array
 
 def run_model_prediction(input_image):
-    # Load the model
+
     model = load_model()
-
-    # Process the input image
     image = preprocess_input_image(input_image)
-
-    # Make a prediction
     result = model.predict(image)
-
-    # Get the predicted class
     predicted_class = int(np.argmax(result))
 
     return predicted_class
