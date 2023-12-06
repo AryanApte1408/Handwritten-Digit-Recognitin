@@ -36,3 +36,13 @@ scipy
 six
 tensorboard
 tensorboard-plugin-wit
+tensorflow
+tensorflow-datasets
+tensorflow-estimator
+tensorflow-metadata
+termcolor
+tqdm
+urllib3
+Werkzeug
+wrapt
+zipp
