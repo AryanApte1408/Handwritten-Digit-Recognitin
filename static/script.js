@@ -20,6 +20,7 @@ window.canvas = new fabric.Canvas('paint-canvas', {
     backgroundColor: canvasBackgroundColor
 });
 window.canvas.freeDrawingBrush.width = 10;
+// function getImageData()
   
 // Convert canvas RGBA data into gray scale data
 var grayscale = function(data) {
