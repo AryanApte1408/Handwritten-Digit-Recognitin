@@ -50,3 +50,7 @@ def predict_digit(image_array):
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=port)
+
+
+#meow aksjd,fgsal;idgukhas'dgha
+#jsahdfjehfjehfjehfjefhjehfjefh
