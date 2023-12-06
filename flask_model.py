@@ -7,6 +7,8 @@ app = Flask(__name__)
 # Define the upload directory
 UPLOAD_FOLDER = 'static/uploaded_images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 @app.route('/')
 def home():
