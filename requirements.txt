@@ -9,10 +9,10 @@ dill
 Flask
 future
 gast
-google-auth
 google-auth-oauthlib
 google-pasta
 googleapis-common-protos
+google-auth
 grpcio
 h5py
 idna
