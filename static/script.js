@@ -1,12 +1,5 @@
 
-/*
-Vue.js (https://vuejs.org/)
-CDN: https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js
 
-Vue is a JavaScript framework which allows us to
-deal with dynamic data easier.  It's not required
-for the actually image drawing interface.
-**/
 var app = new Vue({
     el: '#app',
     data: {
