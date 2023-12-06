@@ -1,5 +1,3 @@
-# test_new_model.py
-
 from new_model import preprocess_input_image
 from model_runner import load_and_predict
 
@@ -12,6 +10,5 @@ def test_load_and_predict():
 
     # Assert that the output is 8
     assert prediction == 8
-
-
+    
 test_load_and_predict()
