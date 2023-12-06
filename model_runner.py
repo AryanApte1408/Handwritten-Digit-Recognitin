@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.inception_v3 import preprocess_input
-
+#from pandas import pd 
 def load_and_predict(input_image_path):
     # Load the trained model
     model = tf.keras.models.load_model('mnist-model')
