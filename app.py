@@ -46,11 +46,5 @@ def predict_digit(image_array):
     predicted_class = int(np.argmax(result))
     return predicted_class
 
-
-
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=port)
-
-
-#meow aksjd,fgsal;idgukhas'dgha
-#jsahdfjehfjehfjehfjefhjehf
