@@ -8,12 +8,7 @@ var app = new Vue({
     }
 })
   
-/*
-Fabric.js (http://fabricjs.com/)
-CDN: https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.1/fabric.min.js
 
-Fabric is a HTML5 canvas library.  We use this for the drawing app.
-**/
 var canvasBackgroundColor = "white";
 var canvasElement = $('#paint-canvas')
 
