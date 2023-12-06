@@ -7,6 +7,9 @@
     margin: auto;
 }
 
+.card-action {
+    text-align: center;
+}
 
 ul {
     margin: 0 auto;
